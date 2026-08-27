@@ -17,6 +17,7 @@ Output 3:
 
 */
 #include<stdio.h>
+#include<math.h>
 int main()
 {
     int a,b;
@@ -39,6 +40,9 @@ int main()
         break;
     case '%':
         printf("%d",a%b);
+        break;
+    case '^':
+        printf("%d",(int)pow(a,b));
         break;
     default:
         printf("Enter a valid operation\n");
